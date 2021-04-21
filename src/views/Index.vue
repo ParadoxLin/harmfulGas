@@ -72,8 +72,6 @@
         <!-- 右侧主体区 -->
         <el-main>
           <router-view></router-view>
-            <!-- <router-view name="graphic"></router-view>
-            <router-view name="table"></router-view> -->
         </el-main>
       </el-container>
     </el-container>

@@ -4,6 +4,7 @@
 
 <script>
 import * as echarts from "echarts";
+
 export default {
   data() {
     return {};
@@ -16,14 +17,14 @@ export default {
     option = {
       xAxis: {
         type: "category",
-        data: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+        data: ["00:00", "02:00", "04:00", "06:00", "08:00", "10:00", "12:00","14:00","16:00","18:00","20:00","22:00"],
       },
       yAxis: {
         type: "value",
       },
       series: [
         {
-          data: [150, 230, 224, 218, 135, 147, 260],
+          data: [150, 230, 224,468, 135, 147, 260,300,542,642,351,245],
           type: "line",
         },
       ],
@@ -37,7 +38,7 @@ export default {
 <style>
 #main {
   width: 50%;
-  height: 50%;
+  height: 400px;
   float: left;
 }
 </style>

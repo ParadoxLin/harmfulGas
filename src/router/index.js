@@ -21,23 +21,23 @@ const routes = [
     children:[
       {
         path:'graphic',
-        component: () => import('../components/data/Graphic.vue'),
+        component: () => import('../views/data/Graphic.vue'),
       },
       {
         path:'table',
-        component: () => import('../components/data/Table.vue'),
+        component: () => import('../views/data/Table.vue'),
       },
       {
         path:'monitoringdata',
-        component: () => import('../components/dataQuery/MonitoringData.vue'),
+        component: () => import('../views/dataQuery/MonitoringData.vue'),
       },
       {
         path:'historydata',
-        component: () => import('../components/dataQuery/HistoryData.vue'),
+        component: () => import('../views/dataQuery/HistoryData.vue'),
       },
       {
         path:'reportform',
-        component: () => import('../components/reportForm/ReportForm.vue'),
+        component: () => import('../views/reportForm/ReportForm.vue'),
       },
     ]
   },

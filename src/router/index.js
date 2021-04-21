@@ -6,33 +6,41 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    redirect: '/login'
+    redirect: '/login',
   },
   {
     path: '/login',
     name: 'login',
-    component: () => import('../views/Login.vue')
+    component: () => import('../views/Login.vue'),
   },
   {
     path: '/index',
     name: 'index',
-    redirect: '/graphic',
+    redirect: '/index/graphic',
     component: () => import('../views/Index.vue'),
     children:[
       {
-        path:'/graphic',
-        components: {
-        graphic: () => import('../components/data/Graphic.vue'),
-        }
+        path:'graphic',
+        component: () => import('../components/data/Graphic.vue'),
       },
       {
-        path:'/table',
-        components: {
-        table: () => import('../components/data/Table.vue'),
-        }
-      }
+        path:'table',
+        component: () => import('../components/data/Table.vue'),
+      },
+      {
+        path:'monitoringdata',
+        component: () => import('../components/dataQuery/MonitoringData.vue'),
+      },
+      {
+        path:'historydata',
+        component: () => import('../components/dataQuery/HistoryData.vue'),
+      },
+      {
+        path:'reportform',
+        component: () => import('../components/reportForm/ReportForm.vue'),
+      },
     ]
-  }
+  },
 
 ]
 

@@ -26,12 +26,12 @@
               <span>数据查询</span>
             </template>
             <el-menu-item-group>
-              <el-menu-item index="2-1">监测数据查询</el-menu-item>
-              <el-menu-item index="2-2">历史数据分析</el-menu-item>
+              <el-menu-item index="2-1" @click= "MonitoringDataShow">监测数据查询</el-menu-item>
+              <el-menu-item index="2-2" @click= "HistoryDataShow">历史数据分析</el-menu-item>
             </el-menu-item-group>
           </el-submenu>
           <!-- 三 -->
-          <el-menu-item index="3">
+          <el-menu-item index="3" @click="reportFormShow">
             <template slot="title">
               <i class="el-icon-s-claim"></i>
               <span>报表查询</span>
@@ -72,8 +72,8 @@
         <!-- 右侧主体区 -->
         <el-main>
           <router-view></router-view>
-            <router-view name="graphic"></router-view>
-            <router-view name="table"></router-view>
+            <!-- <router-view name="graphic"></router-view>
+            <router-view name="table"></router-view> -->
         </el-main>
       </el-container>
     </el-container>
@@ -82,19 +82,30 @@
 
 <script>
 export default {
-  data() {
-
+  data(){
+    return{
+      msg:''
+    }
   },
   methods: {
     goBack() {
       this.$router.push("/login");
     },
     GraphicShow() {
-      this.$router.push('/graphic');
+      this.$router.push('/index/graphic');
     },
     TableShow() {
-      this.$router.push('/table');
+      this.$router.push('/index/table');
     },
+    MonitoringDataShow() {
+      this.$router.push('/index/monitoringdata');
+    },
+    HistoryDataShow(){
+      this.$router.push('/index/historydata');
+    },
+    reportFormShow(){
+      this.$router.push('/index/reportform');
+    }
   },
 };
 </script>

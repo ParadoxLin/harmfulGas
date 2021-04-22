@@ -1,16 +1,12 @@
 <template>
   <div>
-    <Table1/>
+    <h1>预警信息查询</h1>
   </div>
 </template>
 
 <script>
-import Table1 from '../../components/Table1'
-
 export default {
-  components:{
-    Table1
-  }
+
 }
 </script>
 

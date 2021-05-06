@@ -38,7 +38,7 @@ export default {
 <style>
 #main {
   width: 50%;
-  height: 400px;
+  height: 300px;
   float: left;
 }
 </style>

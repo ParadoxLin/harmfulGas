@@ -168,7 +168,7 @@ body {
   background-color: white;
 }
 .el-container {
-  height: 800px;
+  height: 660px;
 }
 
 .el-header {
@@ -179,7 +179,7 @@ body {
   text-align: center;
   line-height: 60px;
   h2 {
-    margin: 0 1153px 0 0;
+    margin: 0 820px 0 0;
     color: #1589f5;
   }
   .el-icon-s-promotion {

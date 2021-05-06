@@ -43,7 +43,7 @@ export default {
 <style>
 #main2 {
   width: 50%;
-  height: 400px;
+  height: 300px;
   float: right;
 }
 </style>

@@ -56,7 +56,7 @@ export default {
 <style>
 #main3 {
   width: 50%;
-  height: 400px;
+  height: 300px;
   float: left;
 }
 </style>

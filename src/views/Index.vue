@@ -221,4 +221,8 @@ body > .el-container {
   text-align: left;
   margin-left: 15px;
 }
+.exit{
+  margin-top: 10px;
+  height: 40px;
+}
 </style>

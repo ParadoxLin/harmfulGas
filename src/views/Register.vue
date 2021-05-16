@@ -2,16 +2,16 @@
   <div class = "register">
     <el-form ref="form" :model="form" label-width="80px">
     <el-form-item label="账号">
-      <el-input v-model="form.user"></el-input>
+      <el-input v-model="form.user" placeholder="请输入您要使用的账号"></el-input>
     </el-form-item>
     <el-form-item label="密码">
-      <el-input v-model="form.password"></el-input>
+      <el-input v-model="form.password" placeholder="请输入您的密码"></el-input>
     </el-form-item>
     <el-form-item label="姓名">
-      <el-input v-model="form.name"></el-input>
+      <el-input v-model="form.name" placeholder="请输入您的姓名"></el-input>
     </el-form-item>
     <el-form-item label="工号">
-      <el-input v-model="form.number"></el-input>
+      <el-input v-model="form.number" placeholder="请输入您的工号"></el-input>
     </el-form-item>
     <el-form-item label="部门">
       <el-select v-model="form.region" placeholder="请选择您的部门" id="department_inner">
